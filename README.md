@@ -1,32 +1,39 @@
-# React + TypeScript + Vite
+# AÉVRA — Horological Conservation Atelier
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A precision-engineered, cinematic web experience for high-end watch restoration. Built for the **Lovable AI Hackathon**.
 
-Currently, two official plugins are available:
+> "Every timepiece deserves careful hands."
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🏆 Lovable AI Hackathon Submission
+AÉVRA tackles the appointment-based business archetype by transforming the cumbersome intake process of luxury watch restoration. Instead of back-and-forth emails negotiating service scopes, AÉVRA turns an inbound "can I book with you?" directly into a confident "you're booked," completely minimizing manual effort for the watchmaker.
 
-## React Compiler
+It features:
+- **Cinematic Photography Architecture**: High-end continuous scrolling GSAP mechanics without heavy 3D loading times.
+- **Inclusive Horology**: A smart intake state machine that adjusts phrasing for everything from standard Seiko mechanics to heirloom Patek Philippes.
+- **Golden Dust Particle Field**: An abstract, highly-optimized WebGL Three.js particle layer to create atmospheric depth.
+- **Lenis Smooth Scrolling**: A hyper-fluid, 60fps cinematic journey.
+- **State-Driven Orchestration**: Intake buttons that automatically fly the user to the correct narrative section using Zustand state.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
+- **Framework**: React 19 / TypeScript / Vite
+- **Styling**: Tailwind CSS v4
+- **Animation**: GSAP (ScrollTrigger) & Framer Motion
+- **Scroll Engine**: Lenis 
+- **3D Render**: Three.js & React Three Fiber (r3f)
+- **State**: Zustand
 
-## Expanding the Oxlint configuration
+## 🚀 Running Locally
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+```bash
+# Install dependencies
+npm install
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Start the dev server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 📐 Design Philosophy
+The atelier rejects standard "vibe-coded" SaaS templates. The typography is a highly specific, editorial mix of `font-serif`, `italic`, and `font-normal` wrapped around a custom `#c9a263` gold accent, designed to evoke the pages of a high-end horological magazine rather than a software dashboard.
