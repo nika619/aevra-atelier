@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #030305;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+canvas,
+.webgl-layer {
+  pointer-events: none !important;
+}
+
+/* Restrained luxury subtle selection highlight */
+::selection {
+  background-color: #c9a263;
+  color: #000000;
+}
