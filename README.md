@@ -37,3 +37,8 @@ npm run build
 
 ## 📐 Design Philosophy
 The atelier rejects standard "vibe-coded" SaaS templates. The typography is a highly specific, editorial mix of `font-serif`, `italic`, and `font-normal` wrapped around a custom `#c9a263` gold accent, designed to evoke the pages of a high-end horological magazine rather than a software dashboard.
+
+
+---
+
+Built by [Mayank Tiwari](https://github.com/nika619) · [Hire me on Contra](https://contra.com/mayank_tiwari_a4vkcjsh)
