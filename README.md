@@ -1,5 +1,7 @@
 # AÉVRA — Horological Conservation Atelier
 
+[![CI](https://github.com/nika619/aevra-atelier/actions/workflows/ci.yml/badge.svg)](https://github.com/nika619/aevra-atelier/actions/workflows/ci.yml)
+
 A precision-engineered, cinematic web experience for high-end watch restoration. Built for the **Lovable AI Hackathon**.
 
 > "Every timepiece deserves careful hands."
