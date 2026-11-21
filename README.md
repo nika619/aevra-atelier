@@ -16,6 +16,16 @@ It features:
 - **Lenis Smooth Scrolling**: A hyper-fluid, 60fps cinematic journey.
 - **State-Driven Orchestration**: Intake buttons that automatically fly the user to the correct narrative section using Zustand state.
 
+## Owner cockpit
+**Live:** https://nika619.github.io/aevra-atelier/#owner
+
+The atelier owner's side of the intake: one dense queue of repair requests, oldest first. Each request opens beside the list with the client's own words, the likely diagnosis and the words it came from, a quote whose total and bench hours are summed from its lines, and a bench strip that shows whether the work fits the next two weeks. Accept, ask for photos or decline from the row's detail, with undo.
+
+- Keyboard: `J` / `K` move, `A` accept and send, `P` ask for photos, `D` decline, `/` search, `Z` undo.
+- Phone: one region at a time; a request opens full screen with a thumb-height action bar.
+- The queue starts with labelled demo requests. A request sent through the customer intake lands in it too (kept in your browser; this demo has no backend).
+- Code: `src/owner/` (data with self-checking totals, a Zustand store, the screen and its CSS). It loads as its own chunk, so the customer site never ships it.
+
 ## 🛠 Tech Stack
 - **Framework**: React 19 / TypeScript / Vite
 - **Styling**: Tailwind CSS v4
