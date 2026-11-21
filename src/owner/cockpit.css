@@ -196,6 +196,7 @@
   .ck[data-open="true"] { grid-template-rows: 1fr; } /* the bar is gone, so the request takes the whole screen */
   .ck-back { display: flex; align-items: center; gap: 4px; height: 48px; margin: 0 -8px; padding: 0 8px; color: var(--muted); }
   .ck-dhead { flex-direction: column; padding-top: 4px; }
+  .ck-block h3 { flex-direction: column; gap: 0; } /* the caption sits under its heading on a phone */
   .ck-dhead .ck-actions { display: none; }
   .ck-bar { display: flex; gap: 8px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--border); }
   .ck-bar .btn { height: 44px; justify-content: center; }
