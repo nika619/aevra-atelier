@@ -31,6 +31,9 @@ export function Navigation() {
       </div>
       
       <div className="flex items-center space-x-6 pointer-events-auto">
+        <a href="#owner" className="hidden md:block text-xs font-sans text-white/60 uppercase tracking-widest hover:text-white transition-colors">
+          Owner view
+        </a>
         <button onClick={() => {
           const target = document.getElementById('intake-scroll-target');
           if (target && (window as any).__lenis) (window as any).__lenis.scrollTo(target, { duration: 1.5 });
