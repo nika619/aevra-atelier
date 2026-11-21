@@ -236,10 +236,10 @@ const PictureLayer = ({ baseName, opacity, scale, blur = 0, isHero = false, clip
       }}
     >
       <picture>
-        <source srcSet={`/assets/${baseName}.avif`} type="image/avif" />
-        <source srcSet={`/assets/${baseName}.webp`} type="image/webp" />
+        <source srcSet={`${import.meta.env.BASE_URL}assets/${baseName}.avif`} type="image/avif" />
+        <source srcSet={`${import.meta.env.BASE_URL}assets/${baseName}.webp`} type="image/webp" />
         <img 
-          src={`/assets/${baseName}.jpg`} 
+          src={`${import.meta.env.BASE_URL}assets/${baseName}.jpg`} 
           alt={baseName.replace(/-/g, ' ')} 
           className="w-full h-full object-cover" 
           loading={isHero ? "eager" : "lazy"}
@@ -1554,7 +1554,7 @@ export default function App() {
             
             {/* Card 1: Patek Philippe Ref. 5170 */}
             <div className="flex items-center gap-3 p-2 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-md hover:border-[#c9a263]/40 transition-colors">
-              <img src="/assets/work-patek.webp" alt="Patek Philippe Ref. 5170" width="44" height="44" loading="lazy" className="w-11 h-11 rounded-lg object-cover" />
+              <img src={`${import.meta.env.BASE_URL}assets/work-patek.webp`} alt="Patek Philippe Ref. 5170" width="44" height="44" loading="lazy" className="w-11 h-11 rounded-lg object-cover" />
               <div className="text-left pr-2">
                 <span className="text-xs text-white font-medium block">Patek Philippe</span>
                 <span className="text-[10px] text-[#a1a1aa] block">Ref. 5170 · Full Restoration</span>
@@ -1563,7 +1563,7 @@ export default function App() {
 
             {/* Card 2: Audemars Piguet Royal Oak */}
             <div className="flex items-center gap-3 p-2 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-md hover:border-[#c9a263]/40 transition-colors">
-              <img src="/assets/work-ap.webp" alt="Audemars Piguet Royal Oak" width="44" height="44" loading="lazy" className="w-11 h-11 rounded-lg object-cover" />
+              <img src={`${import.meta.env.BASE_URL}assets/work-ap.webp`} alt="Audemars Piguet Royal Oak" width="44" height="44" loading="lazy" className="w-11 h-11 rounded-lg object-cover" />
               <div className="text-left pr-2">
                 <span className="text-xs text-white font-medium block">Audemars Piguet</span>
                 <span className="text-[10px] text-[#a1a1aa] block">Royal Oak · Movement Overhaul</span>
@@ -1572,7 +1572,7 @@ export default function App() {
 
             {/* Card 3: Omega Speedmaster */}
             <div className="flex items-center gap-3 p-2 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-md hover:border-[#c9a263]/40 transition-colors">
-              <img src="/assets/work-omega.webp" alt="Omega Speedmaster" width="44" height="44" loading="lazy" className="w-11 h-11 rounded-lg object-cover" />
+              <img src={`${import.meta.env.BASE_URL}assets/work-omega.webp`} alt="Omega Speedmaster" width="44" height="44" loading="lazy" className="w-11 h-11 rounded-lg object-cover" />
               <div className="text-left pr-2">
                 <span className="text-xs text-white font-medium block">Omega Speedmaster</span>
                 <span className="text-[10px] text-[#a1a1aa] block">Ref. 3570 · Hesalite Replacement</span>
