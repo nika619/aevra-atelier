@@ -193,6 +193,7 @@
   .ck[data-open="true"] .ck-list { display: none; }
   .ck[data-open="true"] .ck-detail { display: block; }
   .ck[data-open="true"] > .ck-phonebar { display: none; }
+  .ck[data-open="true"] { grid-template-rows: 1fr; } /* the bar is gone, so the request takes the whole screen */
   .ck-back { display: flex; align-items: center; gap: 4px; height: 48px; margin: 0 -8px; padding: 0 8px; color: var(--muted); }
   .ck-dhead { flex-direction: column; padding-top: 4px; }
   .ck-dhead .ck-actions { display: none; }
