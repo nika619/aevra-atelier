@@ -136,7 +136,7 @@ interface CommitmentState {
   confirmBooking: () => Promise<void>;
 }
 
-export const useCommitmentStore = create<CommitmentState>((set) => ({
+export const useCommitmentStore = create<CommitmentState>((set, get) => ({
   intakeState: 'DESCRIBE',
   userDescription: '',
   parsedWatch: null,
@@ -176,6 +176,9 @@ export const useCommitmentStore = create<CommitmentState>((set) => ({
   confirmBooking: async () => {
     // Simulate secure handoff
     set({ intakeState: 'SUCCESS' });
+    // The request lands in the owner cockpit's queue (kept in this browser; the demo has no backend).
+    const { userDescription, parsedWatch } = get();
+    if (parsedWatch) import('../owner/store').then(m => m.addIntakeRequest(userDescription, parsedWatch));
     if (typeof window !== 'undefined' && (window as any).__lenis) {
       const target = document.getElementById('final-scroll-target');
       if (target) (window as any).__lenis.scrollTo(target, { duration: 1.5 });
